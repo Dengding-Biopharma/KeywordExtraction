@@ -7,5 +7,5 @@ They accumulate in tumor-bearing mice and humans
 with different types of cancer, including hepatocellular 
 carcinoma (HCC)."""
 doc = nlp(text)
-print(doc.tensor)
+print(doc.ents)
 quit()
