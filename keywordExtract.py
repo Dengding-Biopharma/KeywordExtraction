@@ -1,8 +1,10 @@
 import spacy
 import scispacy
 nlp = spacy.load("en_core_sci_scibert")
-text = """spaCy is an open-source software library for advanced natural language processing, 
-written in the programming languages Python and Cython. The library is published under the MIT license
-and its main developers are Matthew Honnibal and Ines Montani, the founders of the software company Explosion."""
+text = """Myeloid derived suppressor cells (MDSC) are immature 
+myeloid cells with immunosuppressive activity. 
+They accumulate in tumor-bearing mice and humans 
+with different types of cancer, including hepatocellular 
+carcinoma (HCC)."""
 doc = nlp(text)
 print(doc.ents)
