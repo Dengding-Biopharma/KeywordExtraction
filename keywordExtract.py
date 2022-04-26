@@ -1,6 +1,6 @@
 import spacy
 import scispacy
-nlp = spacy.load("en_ner_bionlp13cg_md")
+nlp = spacy.load("en_core_sci_scibert")
 text = """Asthma, allergic rhinitis, food allergy, and atopic dermatitis are common childhood diseases
 with several different underlying mechanisms, i.e., endotypes of disease. Metabolomics has the
 potential to identify disease endotypes, which could beneficially promote personalized prevention
