@@ -1,6 +1,6 @@
 import spacy
 import scispacy
-nlp = spacy.load("en_core_sci_scibert")
+nlp = spacy.load("en_ner_bionlp13cg_md")
 text = """Lung cancer remains the most common cause of cancer deaths worldwide, yet there is 
 currently a lack of diagnostic noninvasive biomarkers that could guide treatment decisions. 
 Small molecules (<1500 Da) were measured in urine collected from 469 lung cancer patients and 
