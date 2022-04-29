@@ -1,23 +1,25 @@
 import spacy
 import scispacy
 nlp = spacy.load("en_core_sci_scibert")
-text = """Asthma, allergic rhinitis, food allergy, and atopic dermatitis are common childhood diseases
-with several different underlying mechanisms, i.e., endotypes of disease. Metabolomics has the
-potential to identify disease endotypes, which could beneficially promote personalized prevention
-and treatment. Here, we summarize the findings from metabolomics studies of children with
-atopic diseases focusing on tyrosine and tryptophan metabolism, lipids (particularly, sphingolipids),
-polyunsaturated fatty acids, microbially derived metabolites (particularly, short-chain fatty acids),
-and bile acids. We included 25 studies: 23 examined asthma or wheezing, five examined allergy
-endpoints, and two focused on atopic dermatitis. Of the 25 studies, 20 reported findings in the pathways
-of interest with findings for asthma in all pathways and for allergy and atopic dermatitis in most
-pathways except tyrosine metabolism and short-chain fatty acids, respectively. Particularly, tyrosine,
-3-hydroxyphenylacetic acid, N-acetyltyrosine, tryptophan, indolelactic acid, 5-hydroxyindoleacetic
-acid, p-Cresol sulfate, taurocholic acid, taurochenodeoxycholic acid, glycohyocholic acid, glycocholic
-acid, and docosapentaenoate n-6 were identified in at least two studies. This pathway-specific review
-provides a comprehensive overview of the existing evidence from metabolomics studies of childhood
-atopic diseases. The altered metabolic pathways uncover some of the underlying biochemical
-mechanisms leading to these common childhood disorders, which may become of potential value in
-clinical practice."""
+text = """Lung cancer remains the most common cause of cancer deaths worldwide, yet there is 
+currently a lack of diagnostic noninvasive biomarkers that could guide treatment decisions. 
+Small molecules (<1500 Da) were measured in urine collected from 469 lung cancer patients and 
+536 population controls using unbiased liquid chromatography-mass spectrometry. Clinical 
+putative diagnostic and prognostic biomarkers were validated by quantitation and normalized to 
+creatinine levels at two different time points and further validated in an independent sample set, 
+which comprises 80 cases and 78 population controls, with similar demographic and clinical 
+characteristics when compared to the training set. Creatine riboside (IUPAC name: 2-{2-
+[(2R,3R,4S,5R)-3,4-dihydroxy-5-(hydroxymethyl)-oxolan-2-yl]-1-
+methylcarbamimidamido}acetic acid), a novel molecule identified in this study, and Nacetylneuraminic acid (NANA), were each significantly (P <0.00001) elevated in non–small cell 
+lung cancer (NSCLC) and associated with worse prognosis (hazard ratio (HR) =1.81 [P 
+=0.0002], and 1.54 [P =0.025], respectively). Creatine riboside was the strongest classifier of 
+lung cancer status in all and stage I-II cases, important for early detection, and also associated 
+with worse prognosis in stage I-II lung cancer (HR =1.71, P =0.048). All measurements were 
+highly reproducible with intraclass correlation coefficients ranging from 0.82 - 0.99. Both 
+metabolites were significantly (P <0.03) enriched in tumor tissue compared to adjacent nontumor tissue (N =48), thus revealing their direct association with tumor metabolism. Creatine 
+riboside and NANA may be robust urinary clinical metabolomic markers that are elevated in 
+tumor tissue and associated with early lung cancer diagnosis and worse prognosis.
+"""
 doc = nlp(text)
 print(doc.ents)
 print("TEXT", "START", "END", "ENTITY TYPE")
