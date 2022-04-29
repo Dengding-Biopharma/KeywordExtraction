@@ -24,4 +24,4 @@ doc = nlp(text)
 print(doc.ents)
 print("TEXT", "START", "END", "ENTITY TYPE")
 for ent in doc.ents:
-    print(ent.text,ent.label)
+    print(ent.text,ent.label_)
